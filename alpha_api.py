@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from alpha_vantage.timeseries import TimeSeries
 
-API_key = "Z21EYFELCDFWYR8U"
+API_key = ""
 ts = TimeSeries(key=API_key, output_format='pandas')
 
 data, meta = ts.get_intraday("AAPL", interval='5min', outputsize='full')
